@@ -1,7 +1,6 @@
 import React from "react";
 import s from "./result.module.css";
 
-
 import PostData from "../../people.json";
 import Modal from "./Modal";
 
@@ -23,7 +22,7 @@ const Result = (props) => {
     ? (data = sort
         ? PostData.sort((a, b) => (a.price > b.price ? 1 : -1))
         : PostData.sort((a, b) => (a.price < b.price ? 1 : -1)))
-    : (data = PostData.sort((a,b)=>(a.id < b.id ? 1 : -1)));
+    : (data = PostData.sort((a, b) => (a.id < b.id ? 1 : -1)));
 
   return (
     <div className={s.question}>
@@ -40,15 +39,26 @@ const Result = (props) => {
           <Dropdown.Menu>
             <Dropdown.Item
               onClick={() => {
-                setsort(undefined);setres("Recomended");
+                setsort(undefined);
+                setres("Recomended");
               }}
             >
               Recomended
             </Dropdown.Item>
-            <Dropdown.Item onClick={() => {setsort(true);setres("Lowest price")}}>
+            <Dropdown.Item
+              onClick={() => {
+                setsort(true);
+                setres("Lowest price");
+              }}
+            >
               Lowest price
             </Dropdown.Item>
-            <Dropdown.Item onClick={() => {setsort(false);setres("Highest price")}}>
+            <Dropdown.Item
+              onClick={() => {
+                setsort(false);
+                setres("Highest price");
+              }}
+            >
               Highest price
             </Dropdown.Item>
           </Dropdown.Menu>
@@ -74,8 +84,10 @@ const Result = (props) => {
           <div className={s.main}>
             <div className={s.sp}>
               <div className={s.ul}>
-                {people.specialised.map((specialised , index) => (
-                  <a key={index} className={s.al}>{specialised}</a>
+                {people.specialised.map((specialised, index) => (
+                  <a key={index} className={s.al}>
+                    {specialised}
+                  </a>
                 ))}
               </div>
             </div>

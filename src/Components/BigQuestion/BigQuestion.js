@@ -6,6 +6,10 @@ import Buttons from "../Buttons/Buttons";
 const BigQuestion = (props) => {
   var a = [];
 
+  const [color, setcolor] = React.useState(true);
+
+  const [empty, setempty] = React.useState(false);
+
   a = JSON.parse(localStorage.getItem("question" + props.id)) || [];
 
   const [value, setValue] = React.useState("");
@@ -13,11 +17,19 @@ const BigQuestion = (props) => {
   function remove(e) {
     a.splice(a.indexOf(e), 1);
     localStorage.setItem("question" + props.id, JSON.stringify(a));
+    localStorage.getItem("question" + props.id) !== "[]"
+      ? setempty(true)
+      : setempty(false);
+    setcolor(true);
   }
 
   React.useEffect(() => {
     value !== "" && a.push(value);
     localStorage.setItem("question" + props.id, JSON.stringify(a));
+    localStorage.getItem("question" + props.id) !== "[]"
+      ? setempty(true)
+      : setempty(false);
+    setcolor(true);
   }, [value]);
 
   const onChange = (event) => {
@@ -30,7 +42,7 @@ const BigQuestion = (props) => {
     <div className={s.question}>
       <div className={s.content}>
         <h1 className={s.h1}>{props.question}</h1>
-        <h2 className={s.h2}>{props.remarks}</h2>
+        <h2 className={color ? s.h2 : s.h2eror}>{props.remarks}</h2>
         <div className={s.ansvers}>
           {props.ansvers.map((ansver, index) => (
             <div className="form-group" key={index}>
@@ -47,7 +59,12 @@ const BigQuestion = (props) => {
           ))}
         </div>
       </div>
-      <Buttons id={props.id} />
+      <Buttons
+        id={props.id}
+        empty={empty}
+        setgoodcolor={() => setcolor(true)}
+        setbadcolor={() => setcolor(false)}
+      />
     </div>
   );
 };
