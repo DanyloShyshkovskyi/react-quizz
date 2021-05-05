@@ -62,7 +62,7 @@
     position: relative;
     width: 25px;
     height: 25px;
-    border: 3px solid ;
+    border: 3px #30b3c7 solid ;
     background: #fff;
 }
 [type="radio"]:checked + label:before{
