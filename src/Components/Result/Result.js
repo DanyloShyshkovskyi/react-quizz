@@ -1,0 +1,121 @@
+import React from "react";
+import s from "./result.module.css";
+
+import Buttons from "../Buttons/Buttons";
+
+import PostData from "../../people.json";
+import Modal from "./Modal";
+
+import Dropdown from "react-bootstrap/Dropdown";
+
+const Result = (props) => {
+  const [sort, setsort] = React.useState();
+
+  const [res, setres] = React.useState("Recomended");
+
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  console.log(sort);
+  var data = PostData;
+  sort !== undefined
+    ? (data = sort
+        ? PostData.sort((a, b) => (a.price > b.price ? 1 : -1))
+        : PostData.sort((a, b) => (a.price < b.price ? 1 : -1)))
+    : (data = PostData.sort((a,b)=>(a.id < b.id ? 1 : -1)));
+
+  return (
+    <div className={s.question}>
+      <Modal handleShow={handleShow} handleClose={handleClose} show={show} />
+      <div className={s.zmien} onClick={handleShow}>
+        zmień preferencje
+      </div>
+      <h1 className={s.mh1}>List of therapist</h1>
+      <div className={s.sort}>
+        <h2 className={s.h2}>Sort by:</h2>
+        <Dropdown>
+          <Dropdown.Toggle id="dropdown-basic">{res}</Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item
+              onClick={() => {
+                setsort(undefined);setres("Recomended");
+              }}
+            >
+              Recomended
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => {setsort(true);setres("Lowest price")}}>
+              Lowest price
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => {setsort(false);setres("Highest price")}}>
+              Highest price
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </div>
+
+      {data.map((people) => (
+        <div className={s.content}>
+          <div className={s.head}>
+            <img height="200" width="200" className={s.img} src={people.img} />
+            <div className={s.col}>
+              <a className={s.a}>
+                from £ {people.price}
+                <br />
+                per session
+              </a>
+              <div>
+                <h1 className={s.h1}>{people.name}</h1>
+                <h2 className={s.h2}>{people.post}</h2>
+              </div>
+            </div>
+          </div>
+          <div className={s.main}>
+            <div className={s.sp}>
+              <div className={s.ul}>
+                {people.specialised.map((specialised) => (
+                  <a className={s.al}>{specialised}</a>
+                ))}
+              </div>
+            </div>
+            <div className={s.method}>
+              <div className={s.item}>
+                {" "}
+                <p>Video</p>
+                <p
+                  className={people.method.includes("video") ? s.amt : s.amf}
+                ></p>
+              </div>
+              <div className={s.item}>
+                {" "}
+                <p>Phone</p>
+                <p
+                  className={people.method.includes("phone") ? s.amt : s.amf}
+                ></p>
+              </div>
+              <div className={s.item}>
+                {" "}
+                <p>Chat</p>
+                <p
+                  className={people.method.includes("chat") ? s.amt : s.amf}
+                ></p>
+              </div>
+            </div>
+          </div>
+          <div className={s.footer}>
+            <p className={s.f}>
+              Id cupidatat veniam excepteur fugiat ea quis. Nulla aute ut ex
+              dolore excepteur. Minim fugiat consectetur ea pariatur sit
+              reprehenderit incididunt culpa.
+            </p>
+            <div className={s.button}>Viev profile</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Result;

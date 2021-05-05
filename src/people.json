@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "img": "image/person1.jpg",
+        "name": "dr. Aleksandra Stevens-Schlotterbeck",
+        "post": "Psychologist, Counsellor",
+        "price":"20",
+        "specialised": [
+            "depression",
+            "depression",
+            "phycical addiction",
+            "phycical addiction",
+            "borderline personality",
+            "borderline personality"
+        ],
+        "method":["video","phone"]
+    },
+    {
+        "id": 2,
+        "img": "image/person2.jpg",
+        "name": "dr. Dzievczyna Name-Name",
+        "post": "Psychologist, Counsellor",
+        "price":"10",
+        "specialised": [
+            "emotional crisis",
+            "emotional crisis",
+            "aggression",
+            "aggression",
+            "self-aggression",
+            "self-aggression"
+        ],
+        "method":["video","chat"]
+    },
+    {
+        "id": 3,
+        "img": "image/person3.jpg",
+        "name": "dr. Evgeniy Mazurek-Deger",
+        "post": "Psychologist, Counsellor",
+        "price":"30",
+        "specialised": [
+            "addiction",
+            "depression",
+            "addiction",
+            "phycical addiction",
+            "bipolar",
+            "borderline personality"
+        ],
+        "method":["chat"]
+    },
+    {
+        "id": 4,
+        "img": "image/person4.jpg",
+        "name": "dr. Danylo Shyshkovskyi",
+        "post": "Psychologist, Counsellor",
+        "price":"50",
+        "specialised": [
+            "difficulties in relationship",
+            "affective disease",
+            "phycical addiction",
+            "sex life",
+            "borderline personality",
+            "schizophrenia"
+        ],
+        "method":["video","phone","chat"]
+    },
+    {
+        "id": 5,
+        "img": "image/person5.jpg",
+        "name": "dr. Dzievczynka Name-SurName",
+        "post": "Psychologist, Counsellor",
+        "price":"40",
+        "specialised": [
+            "depression",
+            "phobia",
+            "dysthymia",
+            "phycical addiction",
+            "difficulties in relationship",
+            "borderline personality"
+        ],
+        "method":["phone","chat"]
+    }
+]

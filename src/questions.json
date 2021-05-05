@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "destiny": "question",
+        "question": "What therapy or consultation are you loking for?",
+        "ansvers": [
+            "Individual",
+            "Couple therapy",
+            "For children"
+        ]
+    },
+    {
+        "id": 2,
+        "destiny": "question",
+        "question": "What is your gender?",
+        "ansvers": [
+            "Female",
+            "Male",
+            "Other"
+        ]
+    },
+    {
+        "id": 3,
+        "destiny": "question",
+        "question": "How old are you?",
+        "ansvers": [
+            "16-17",
+            "18-59",
+            "60+"
+        ]
+    },
+    {
+        "id": 4,
+        "destiny": "bigquestion",
+        "question": "What best describes what you are struggling with?",
+        "remarks": "Choose at least one option",
+        "ansvers": [
+            "emotional crisis",
+            "addiction",
+            "family problems",
+            "aggression",
+            "mood problems",
+            "anorexia",
+            "enxiety difficulties",
+            "panic attacks",
+            "difficulties in relationship",
+            "self-aggression",
+            "professional difficulties",
+            "bulimia",
+            "addiction",
+            "affective disease",
+            "related to the body",
+            "bipolar",
+            "sex life",
+            "depression",
+            "phobia",
+            "dysthymia",
+            "social phobia",
+            "violence",
+            "mobbing",
+            "schizophrenia"
+        ]
+    },
+    {
+        "id": 5,
+        "destiny": "bigquestion",
+        "question": "Language of therapy",
+        "remarks": "Choose at least one language or more if you need multi-lingual therapist",
+        "ansvers": [
+            "English",
+            "Polish",
+            "Romanian",
+            "Spanish",
+            "Italian",
+            "Russian",
+            "German",
+            "Arabic",
+            "Ukrainian",
+            "Portuguese",
+            "Slovakian",
+            "Czech",
+            "Chinese",
+            "Hindi",
+            "French",
+            "Bengali"
+        ]
+    }
+]

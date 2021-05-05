@@ -1,0 +1,32 @@
+.buttons {
+    margin-top: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.back{
+    height: 50px;
+    width: 150px;
+    background: #32576e;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-right: 40px;
+    text-transform: uppercase;
+    
+}
+.next{
+    height: 50px;
+    width: 150px;
+    background: #30b3c7;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    
+}

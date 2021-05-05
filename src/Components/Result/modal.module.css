@@ -1,0 +1,85 @@
+.item{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.row{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.list{
+    color: #32576e;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type:none;
+}
+.listItem{
+    text-transform: capitalize;
+}
+.listItem::before{
+  content: "-";
+  margin-left: -35px;
+  margin-right: 5px;
+}
+.button{
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    background: #30b3c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    color: #32576e;
+    font-size: 24px;
+}
+
+.show{
+    cursor: pointer;
+    color: #c3ced5;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.show:hover{
+    color: #a4acb1;
+}
+.bigButton{
+    margin: auto;
+    margin-top:40px;
+    margin-bottom:30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 70%;
+    height: 40px;
+    background: #30b3c7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista{
+    color:#597281;
+    font-weight: 600;
+}
+.divlist{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.list2{
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+}
