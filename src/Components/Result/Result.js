@@ -1,7 +1,6 @@
 import React from "react";
 import s from "./result.module.css";
 
-import Buttons from "../Buttons/Buttons";
 
 import PostData from "../../people.json";
 import Modal from "./Modal";
@@ -57,7 +56,7 @@ const Result = (props) => {
       </div>
 
       {data.map((people) => (
-        <div className={s.content}>
+        <div key={people.id} className={s.content}>
           <div className={s.head}>
             <img height="200" width="200" className={s.img} src={people.img} />
             <div className={s.col}>
@@ -75,8 +74,8 @@ const Result = (props) => {
           <div className={s.main}>
             <div className={s.sp}>
               <div className={s.ul}>
-                {people.specialised.map((specialised) => (
-                  <a className={s.al}>{specialised}</a>
+                {people.specialised.map((specialised , index) => (
+                  <a key={index} className={s.al}>{specialised}</a>
                 ))}
               </div>
             </div>

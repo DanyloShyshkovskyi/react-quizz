@@ -16,7 +16,7 @@ const BigQuestion = (props) => {
   }
 
   React.useEffect(() => {
-    value != "" && a.push(value);
+    value !== "" && a.push(value);
     localStorage.setItem("question" + props.id, JSON.stringify(a));
   }, [value]);
 
@@ -42,7 +42,7 @@ const BigQuestion = (props) => {
                 defaultChecked={a.includes(ansver)}
                 id={index}
               />
-              <label for={index}>{ansver}</label>
+              <label htmlFor={index}>{ansver}</label>
             </div>
           ))}
         </div>

@@ -46,7 +46,7 @@ const Modall = (props) => {
             </div>
             <ul className={s.list}>
               {q4.slice(0, numberOfItems1).map((list, index) => (
-                <li className={s.listItem}>{list}</li>
+                <li key={index} className={s.listItem}>{list}</li>
               ))}
                {!show1 ? (
               <p onClick={() => setshow1(!show1)} className={s.show}>
@@ -70,7 +70,7 @@ const Modall = (props) => {
             </div>
             <ul className={s.list}>
               {q5.slice(0, numberOfItems2).map((list, index) => (
-                <li className={s.listItem}>{list}</li>
+                <li key={index} className={s.listItem}>{list}</li>
               ))}
                       {!show2 ? (
               <p onClick={() => setshow2(!show2)} className={s.show}>
