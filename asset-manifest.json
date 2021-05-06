@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-quizz/static/css/main.de1973c4.chunk.css",
-    "main.js": "/react-quizz/static/js/main.7117eee0.chunk.js",
-    "main.js.map": "/react-quizz/static/js/main.7117eee0.chunk.js.map",
-    "runtime-main.js": "/react-quizz/static/js/runtime-main.b0621a7d.js",
-    "runtime-main.js.map": "/react-quizz/static/js/runtime-main.b0621a7d.js.map",
-    "static/js/2.8d4b834c.chunk.js": "/react-quizz/static/js/2.8d4b834c.chunk.js",
-    "static/js/2.8d4b834c.chunk.js.map": "/react-quizz/static/js/2.8d4b834c.chunk.js.map",
-    "static/js/3.9a005d84.chunk.js": "/react-quizz/static/js/3.9a005d84.chunk.js",
-    "static/js/3.9a005d84.chunk.js.map": "/react-quizz/static/js/3.9a005d84.chunk.js.map",
+    "main.js": "/react-quizz/static/js/main.76435f31.chunk.js",
+    "main.js.map": "/react-quizz/static/js/main.76435f31.chunk.js.map",
+    "runtime-main.js": "/react-quizz/static/js/runtime-main.ea59fa88.js",
+    "runtime-main.js.map": "/react-quizz/static/js/runtime-main.ea59fa88.js.map",
+    "static/js/2.be7048f0.chunk.js": "/react-quizz/static/js/2.be7048f0.chunk.js",
+    "static/js/2.be7048f0.chunk.js.map": "/react-quizz/static/js/2.be7048f0.chunk.js.map",
+    "static/js/3.3aa64e3e.chunk.js": "/react-quizz/static/js/3.3aa64e3e.chunk.js",
+    "static/js/3.3aa64e3e.chunk.js.map": "/react-quizz/static/js/3.3aa64e3e.chunk.js.map",
     "index.html": "/react-quizz/index.html",
     "static/css/main.de1973c4.chunk.css.map": "/react-quizz/static/css/main.de1973c4.chunk.css.map",
-    "static/js/2.8d4b834c.chunk.js.LICENSE.txt": "/react-quizz/static/js/2.8d4b834c.chunk.js.LICENSE.txt"
+    "static/js/2.be7048f0.chunk.js.LICENSE.txt": "/react-quizz/static/js/2.be7048f0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b0621a7d.js",
-    "static/js/2.8d4b834c.chunk.js",
+    "static/js/runtime-main.ea59fa88.js",
+    "static/js/2.be7048f0.chunk.js",
     "static/css/main.de1973c4.chunk.css",
-    "static/js/main.7117eee0.chunk.js"
+    "static/js/main.76435f31.chunk.js"
   ]
 }
