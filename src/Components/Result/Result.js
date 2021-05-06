@@ -28,7 +28,7 @@ const Result = (props) => {
     <div className={s.question}>
       <Modal handleShow={handleShow} handleClose={handleClose} show={show} />
       <div className={s.zmien} onClick={handleShow}>
-        zmień preferencje
+        Modify preferences
       </div>
       <h1 className={s.mh1}>List of therapist</h1>
       <div className={s.sort}>
