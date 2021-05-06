@@ -21,6 +21,7 @@ const BigQuestion = (props) => {
       ? setempty(true)
       : setempty(false);
     setcolor(true);
+    setValue("");
   }
 
   React.useEffect(() => {
