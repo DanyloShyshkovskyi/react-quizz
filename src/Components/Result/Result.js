@@ -13,16 +13,31 @@ const Result = (props) => {
 
   const [show, setShow] = React.useState(false);
 
+  var a = [];
+
+  a = JSON.parse(localStorage.getItem("question4")) || [];
+
+ 
+  const ValueData = PostData.map((number) =>
+  {  
+    let value = 0
+    number.specialised.map((number2)=>{a.includes(number2) && (value = value+1)})
+    return{
+    ...number,
+    value:value
+  }}
+
+)
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  console.log(sort);
-  var data = PostData;
+  var data = ValueData;
   sort !== undefined
     ? (data = sort
-        ? PostData.sort((a, b) => (a.price > b.price ? 1 : -1))
-        : PostData.sort((a, b) => (a.price < b.price ? 1 : -1)))
-    : (data = PostData.sort((a, b) => (a.id < b.id ? 1 : -1)));
+        ? ValueData.sort((a, b) => (a.price > b.price ? 1 : -1))
+        : ValueData.sort((a, b) => (a.price < b.price ? 1 : -1)))
+    : (data = ValueData.sort((a, b) => (a.value < b.value ? 1 : -1)));
 
   return (
     <div className={s.question}>

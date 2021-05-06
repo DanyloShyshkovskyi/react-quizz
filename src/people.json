@@ -6,12 +6,12 @@
         "post": "Psychologist, Counsellor",
         "price":"20",
         "specialised": [
-            "depression",
-            "depression",
-            "phycical addiction",
-            "phycical addiction",
-            "borderline personality",
-            "borderline personality"
+            "emotional crisis",
+            "abortion",
+            "family problems",
+            "aggression",
+            "mood problems",
+            "anorexia"
         ],
         "method":["video","phone"]
     },
@@ -22,12 +22,12 @@
         "post": "Psychologist, Counsellor",
         "price":"10",
         "specialised": [
-            "emotional crisis",
-            "emotional crisis",
-            "aggression",
-            "aggression",
+            "enxiety difficulties",
+            "panic attacks",
+            "difficulties in relationship",
             "self-aggression",
-            "self-aggression"
+            "professional difficulties",
+            "bulimia"
         ],
         "method":["video","chat"]
     },
@@ -39,11 +39,11 @@
         "price":"30",
         "specialised": [
             "addiction",
-            "depression",
-            "addiction",
-            "phycical addiction",
+            "affective disease",
+            "related to the body",
             "bipolar",
-            "borderline personality"
+            "sex life",
+            "depression"
         ],
         "method":["chat"]
     },
@@ -54,11 +54,11 @@
         "post": "Psychologist, Counsellor",
         "price":"50",
         "specialised": [
-            "difficulties in relationship",
-            "affective disease",
-            "phycical addiction",
-            "sex life",
-            "borderline personality",
+            "phobia",
+            "dysthymia",
+            "social phobia",
+            "violence",
+            "mobbing",
             "schizophrenia"
         ],
         "method":["video","phone","chat"]
